@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditTextPreference android:key="numofparticles" android:title="Number of particles" android:summary="Chose a initial particle's number" android:defaultValue="5">
+
+    </EditTextPreference>
+    <Preference android:key="getimage" android:title="Load image" android:summary="Chose your own image">
+
+    </Preference>
+
+    <PreferenceCategory android:title="Particle's Color">
+        <SeekBarPreference  android:title="Red" android:summary="Value:138" android:defaultValue="138" android:max="255" android:key="Red" app:showSeekBarValue="true"></SeekBarPreference>
+        <SeekBarPreference android:title="Green" android:summary="Value:43" android:defaultValue="43" android:max="255" android:key="Green" app:showSeekBarValue="true"></SeekBarPreference>
+        <SeekBarPreference android:title="Blue" android:summary="Value:226" android:defaultValue="226" android:max="255" android:key="Blue" app:showSeekBarValue="true"></SeekBarPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Line color">
+        <SeekBarPreference  android:title="lRed" android:summary="Value:218" android:defaultValue="218" android:max="255" android:key="lRed" app:showSeekBarValue="true"></SeekBarPreference>
+        <SeekBarPreference android:title="lGreen" android:summary="Value:112" android:defaultValue="112" android:max="255" android:key="lGreen" app:showSeekBarValue="true"></SeekBarPreference>
+        <SeekBarPreference android:title="lBlue" android:summary="Value:214" android:defaultValue="214" android:max="255" android:key="lBlue" app:showSeekBarValue="true"></SeekBarPreference>
+    </PreferenceCategory>
+    <CheckBoxPreference android:title="Touch" android:defaultValue="true" android:summary="Insert particle" android:key="isTouch">
+
+    </CheckBoxPreference>
+
+
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <com.nmt.particle.view
+        android:id="@+id/viewid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.nmt.particle.view>
+    -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpaper"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+    </me.relex.circleindicator.CircleIndicator>
+
+    <Button
+        android:id="@+id/set_bg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="200px"
+        android:background="@drawable/custom_btn"
+        android:text="Set as background" />
+
+
+
+
+</RelativeLayout>

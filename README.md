@@ -1,5 +1,5 @@
 # PhysicWallpaper
-This is a project that i did in 1 month.
+This is a project that i built in Android Studio
 
 This wallpaper using 2d canvas for drawing stuffs. 
 

@@ -98,7 +98,7 @@ public class Preferences extends PreferenceActivity {
                 if (s.equals(isTouch))
                 {
                     Preference check=findPreference(isTouch);
-                    boolean a=sharedPreferences.getBoolean(s,false);
+                    boolean a=sharedPreferences.getBoolean(s,true);
 
 
                 }

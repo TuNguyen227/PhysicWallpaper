@@ -118,7 +118,7 @@ public class picturepixeleffect extends WallpaperService {
                heartmove=0;
            }
            else {
-               background=BitmapFactory.decodeResource(getResources(),R.drawable.yuamikami);
+               background=BitmapFactory.decodeResource(getResources(),R.drawable.happy83);
                background=Bitmap.createScaledBitmap(background,500,500,false);
 
            }

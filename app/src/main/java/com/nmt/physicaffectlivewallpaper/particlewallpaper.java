@@ -64,11 +64,13 @@ public class particlewallpaper extends WallpaperService {
             wallpaper_height= size.y;
             wallpaper_width= size.x;
 
-            isTouch=true;
+
 
             sharedPreferences= PreferenceManager.getDefaultSharedPreferences(particlewallpaper.this);
+
             sharedPreferences.registerOnSharedPreferenceChangeListener(listener);
             num_particle=Integer.parseInt(sharedPreferences.getString(Preferences.numofparticles,"5"));
+            isTouch=sharedPreferences.getBoolean(Preferences.isTouch,true);
             String encodeimage=sharedPreferences.getString(Preferences.image,null);
             paint.setStyle(Paint.Style.FILL_AND_STROKE);
             getParticleColor();
@@ -141,7 +143,7 @@ public class particlewallpaper extends WallpaperService {
         };
         public void getParticleColor()
         {
-            Red=sharedPreferences.getInt(Preferences.Red, Integer.parseInt("138"));
+            Red=sharedPreferences.getInt(Preferences.Red, Integer.parseInt("139"));
             Green=sharedPreferences.getInt(Preferences.Green, Integer.parseInt("43"));
             Blue=sharedPreferences.getInt(Preferences.Blue, Integer.parseInt("226"));
 
@@ -206,7 +208,7 @@ public class particlewallpaper extends WallpaperService {
             super.onSurfaceCreated(holder);
             initArray(wallpaper_width,wallpaper_height);
             Log.d("hei",String.valueOf(wallpaper_height));
-
+            isTouch=sharedPreferences.getBoolean(Preferences.isTouch,true);
 
             // set paint for drawing front-behind connection
 
@@ -263,6 +265,7 @@ public class particlewallpaper extends WallpaperService {
         public void onSurfaceChanged(SurfaceHolder holder, int format, int width, int height) {
             this.wallpaper_width=width;
             this.wallpaper_height=height;
+            isTouch=sharedPreferences.getBoolean(Preferences.isTouch,true);
             super.onSurfaceChanged(holder, format, width, height);
         }
 

@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     {
         List<Photo> list=new ArrayList<>();
         list.add(new Photo(R.raw.particlegif));
-        list.add(new Photo(R.raw.picturegif));
+        list.add(new Photo(R.raw.picgif));
 
         return list;
     }
